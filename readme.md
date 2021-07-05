@@ -1,30 +1,17 @@
 # New World
 
-New World is the Default Microweber template website prepared for online stores. Fully responsive, clean and modern design. 
-
+Shopmag is the defauth e-Commerce website template of Microweber CMS. It's come for free with each installation of Microweber and you can use it to build 
+an online store on using it. The design is clean and modern. There is a filter functionality integrated by default. The shop page is based on Shop Module of Microweber
+which combione few e-commerce functions in one module. Thouse are - Search, Product List with buttons, Filters, Sort, Pagination. 
 ## Features:
 
-* 20 Dynamic Layouts
-* Sticky Menu
-* Galleries
-* Color Schemes 
-* Instagram Module
-* Paralax Effects
-* Testimonials Module
-* Reservation Form
-* Social Modules
-* Pricing Tables
-* Pixel Perfect Design
-* Blog Posts
-* Creative Design
-* Fully Responsive
-* Cross Browser Support
+* Full e-Commerce functionality 
+* Filters
+* Shopping cart
+* Mobile ready
+* Social Networks Module
+* Blog 
 * Easy to Customize
-* SEO Optimized
-* Over 2000 icons
-* Well Documented
-* Free Lifetime Updates
-* Custom Support 
-* Bootstrap 4 based
+* Bootstrap 5 based
 
 ![features.jpg](./readme_assets/features.jpg "")
