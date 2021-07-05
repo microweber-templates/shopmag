@@ -344,7 +344,7 @@ body[data-lang="ar"] .navbar-header ul.header-contacts-list li a span:nth-of-typ
   height: 100%; }
 
 .navigation .navbar-header .logo img {
-  max-height: 100px;
+  max-height: 100px !important;
   transition: all, 0.3s; }
 
 .navigation.sticky .navbar-header .logo img {
@@ -627,7 +627,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   content: "";
   left: auto;
   right: 0;
-  top: 100%;
+  top: 17px;
   height: 1px;
   transition: all .4s;
   position: absolute;

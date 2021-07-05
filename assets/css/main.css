@@ -20008,14 +20008,11 @@ ul.socials-2 li a:hover {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: 12px;
+    bottom: 12px;
     right: 12px;
     left: auto;
-    display: flex;
     width: auto;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap; }
+    align-items: center; }
     .shop-products .product .hover .btn {
       background: #2c2c2c;
       color: #f4f4f4;
@@ -25226,5 +25223,26 @@ table {
 
 .login-modal .modal-content {
   background: white; }
+  .login-modal .modal-content .modal-header .close {
+    margin-top: -16px;
+    margin-right: unset;
+    background: white;
+    opacity: 1;
+    color: #505050;
+    padding: unset;
+    border: unset;
+    border-radius: unset;
+    font-size: 30px; }
+
+.login-modal .modal-header .close {
+  margin-top: -16px;
+  margin-right: unset;
+  background: white;
+  opacity: 1;
+  color: #505050;
+  padding: unset;
+  border: unset;
+  border-radius: unset;
+  font-size: 30px; }
 
 /*# sourceMappingURL=main.css.map */
