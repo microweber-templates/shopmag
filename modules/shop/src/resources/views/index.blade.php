@@ -47,7 +47,7 @@
     </div>
     @endif
 
-    <div class="shopmag-shop-column shopmag-shop-right-column @if($products->hasFilter()) col-xl-9 @else col-xl-12 @endif">
+    <div class="shopmag-shop-column shopmag-shop-right-column @if($products->hasFilter()) col-xl @else col-xl-12 @endif">
         <div class="row">
             <div class="col-xxl-6 col-xl-5 col-lg-7 col-lg-2 col-lg-5 py-xl-0 py-4">
                 <p> <?php _e("Displaying"); ?> {{$products->count()}} <?php _e("of"); ?> {{ $products->total() }}  <?php _e("result(s)"); ?>.</p>
@@ -75,10 +75,10 @@
                                 <div class="hover">
                                     <?php if ($product->inStock == true): ?>
                                     <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-{{$product->id}}', '{{$product->price}}','{{$product->title}}');" class="btn btn-default"><i class="mdi mdi-shopping"></i></a>
-                                    <a href="{{site_url($product->url)}}" class="btn btn-default"><i class="material-icons">remove_red_eye</i></a>
+                                    <a href="{{site_url($product->url)}}" class="btn btn-default"><i class="mdi mdi-eye"></i></a>
                                     <?php else: ?>
                                     <a href="javascript:;" onclick="alert('This product is out of stock');" class=" btn btn-default"><i class="mdi mdi-cart-off"></i></a>
-                                    <a href="{{site_url($product->url)}}" class="btn btn-default"><i class="material-icons">remove_red_eye</i></a>
+                                    <a href="{{site_url($product->url)}}" class="btn btn-default"><i class="mdi mdi-eye"></i></a>
                                     <?php endif; ?>
 
                                     <a href="#" onclick="productQuickView('{{$product->id}}', '{{_e('Quick view ')}} {{$product->title}}')" class="btn btn-default"><i class="mdi mdi-magnify-plus-outline"></i></a>
