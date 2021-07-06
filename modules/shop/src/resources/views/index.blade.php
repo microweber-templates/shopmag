@@ -93,8 +93,8 @@
 
 
                             <div class="mb-2">
-                                @foreach($product->tags as $tag)
-                                    <span class="badge badge-lg p-0"><a href="?tags={{$tag->slug}}">{{$tag->name}}</a></span>
+                                @foreach($product->tags as $tag) 
+                                    <span class="badge badge-lg p-0"><a href="?tags[]={{$tag->slug}}">{{$tag->name}}</a></span>
                                 @endforeach
                             </div>
 
