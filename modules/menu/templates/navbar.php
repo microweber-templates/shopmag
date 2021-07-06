@@ -13,13 +13,13 @@ description: Navigation bar
 ?>
 <script>
 
-    /*    $(document).ready(function () {
+        $(document).ready(function () {
      $('ul.nav .dropdown').hover(function () {
      $(this).find('.dropdown-menu:first', this).stop(true, true).delay(200).fadeIn();
      }, function () {
      $(this).find('.dropdown-menu:first', this).stop(true, true).delay(200).fadeOut();
      });
-     });*/
+     });
 
 </script>
 
