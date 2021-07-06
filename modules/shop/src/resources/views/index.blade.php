@@ -1,5 +1,4 @@
 {!! $products->scripts() !!}
-
 <script>
     $(document).ready(function(){
 
@@ -52,9 +51,6 @@
             <div class="col-xxl-6 col-xl-5 col-lg-7 col-lg-2 col-lg-5 py-xl-0 py-4">
                 <p> <?php _e("Displaying"); ?> {{$products->count()}} <?php _e("of"); ?> {{ $products->total() }}  <?php _e("result(s)"); ?>.</p>
             </div>
-
-            {!! $products->setLimitOptions([3,6,9,12,15,18,21]) !!}
-
             <div class="col-xxl-6 col-xl-7 col-lg-5 d-block d-sm-flex justify-content-end">
                 <div class="col-12 col-sm px-1 ms-auto">{!! $products->limit(); !!}</div>
                 <div class="col-12 col-sm px-1 ms-auto">{!! $products->sort(); !!}</div>

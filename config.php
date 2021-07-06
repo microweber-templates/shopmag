@@ -85,6 +85,8 @@ $config['template_settings']['shopping_cart']['options'] = array('true' => 'Yes'
 $config['template_settings']['header_posts'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show Posts button');
 $config['template_settings']['header_posts']['options'] = array('true' => 'Yes', 'false' => 'No');
 
+$config['template_settings']['items_limit_options'] = array('type' => 'hidden', 'default' => array(6,9,12,15,18,21));
+
 $config['template_settings'][] = array('type' => 'delimiter');
 
 $config['template_settings'][] = array('type' => 'title', 'label' => 'Shop Options');
