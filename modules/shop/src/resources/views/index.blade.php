@@ -1,5 +1,4 @@
 {!! $products->scripts() !!}
-
 <script>
     $(document).ready(function(){
 
@@ -93,7 +92,7 @@
 
 
                             <div class="mb-2">
-                                @foreach($product->tags as $tag) 
+                                @foreach($product->tags as $tag)
                                     <span class="badge badge-lg p-0"><a href="?tags[]={{$tag->slug}}">{{$tag->name}}</a></span>
                                 @endforeach
                             </div>
