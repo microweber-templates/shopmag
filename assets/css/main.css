@@ -9899,15 +9899,27 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
     border-bottom: 1px black; }
 
 .navigation .list li > a:after {
+  content: '';
+  transition: all, 0.3s;
+  transform: rotate(0);
+  top: calc(50% - 1.5px); }
+
+.navigation .list li > a:after {
+  content: '';
+  transition: all, 0.3s;
+  transform: rotate(0);
+  top: calc(50% - 1.5px); }
+
+.dropdown-has-child:after {
   content: "";
-  left: auto;
-  right: 0;
-  top: 17px;
-  height: 1px;
-  transition: all .4s;
-  position: absolute;
-  width: 0;
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent; }
 
 body:not([data-lang="ar"]) .navigation .list li.has-sub-menu > a:after {
   margin-left: 10px; }
@@ -10264,6 +10276,12 @@ body[data-lang="ar"] .dropdown-menu {
       background-color: fade(#f4f4f4, 3%); }
     html:not(.sidebar-nav-website) .navigation .menu .list > li > ul li:hover > a:focus {
       color: #2c2c2c; }
+    html:not(.sidebar-nav-website) .navigation .list li:hover > ul {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      top: 60px;
+      left: 0; }
     html:not(.sidebar-nav-website) .mw-live-edit .navigation .menu-overlay {
       position: static; }
     html:not(.sidebar-nav-website) .toggle-inside-menu {
@@ -16076,15 +16094,27 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
     border-bottom: 1px black; }
 
 .navigation .list li > a:after {
+  content: '';
+  transition: all, 0.3s;
+  transform: rotate(0);
+  top: calc(50% - 1.5px); }
+
+.navigation .list li > a:after {
+  content: '';
+  transition: all, 0.3s;
+  transform: rotate(0);
+  top: calc(50% - 1.5px); }
+
+.dropdown-has-child:after {
   content: "";
-  left: auto;
-  right: 0;
-  top: 17px;
-  height: 1px;
-  transition: all .4s;
-  position: absolute;
-  width: 0;
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent; }
 
 body:not([data-lang="ar"]) .navigation .list li.has-sub-menu > a:after {
   margin-left: 10px; }
@@ -16441,6 +16471,12 @@ body[data-lang="ar"] .dropdown-menu {
       background-color: fade(#f4f4f4, 3%); }
     html:not(.sidebar-nav-website) .navigation .menu .list > li > ul li:hover > a:focus {
       color: #2c2c2c; }
+    html:not(.sidebar-nav-website) .navigation .list li:hover > ul {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      top: 60px;
+      left: 0; }
     html:not(.sidebar-nav-website) .mw-live-edit .navigation .menu-overlay {
       position: static; }
     html:not(.sidebar-nav-website) .toggle-inside-menu {
