@@ -1,12 +1,11 @@
 {
   "name": "microweber-templates/shopmag",
   "type": "microweber-template",
-  "description": "New World",
+  "description": "Shopmag",
   "keywords": [
     "microweber",
     "ecommerce",
     "bootstrap",
-    "default"
   ],
   "homepage": "https://microweber.com/",
   "license": "MIT",
@@ -17,7 +16,7 @@
     }
   ],
   "extra": {
-    "preview_url": "http://templates.microweber.com/new-world/"
+    "preview_url": "https://templates.microweber.com/shopmag/"
   },
-  "target-dir": "new-world"
+  "target-dir": "shopmag"
 }
