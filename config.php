@@ -4,7 +4,7 @@ $config = array();
 $config['name'] = "Shopmag";
 $config['author'] = "Microweber CMS";
 $config['version'] = 1.0;
-$config['url'] = "http://microweber.com";
+$config['url'] = "https://microweber.org";
 $config['standalone_module_skins'] = true;
 $config['framework'] = "bootstrap5";
 
