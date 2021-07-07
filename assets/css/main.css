@@ -9921,12 +9921,6 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   border-bottom: 0;
   border-left: 0.3em solid transparent; }
 
-body:not([data-lang="ar"]) .navigation .list li.has-sub-menu > a:after {
-  margin-left: 10px; }
-
-body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
-  margin-right: 10px; }
-
 .navigation li:hover > a:after {
   transform: rotate(-90deg); }
 
@@ -9941,8 +9935,8 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
   opacity: 0;
   visibility: hidden;
   transition: all, 0.3s;
-  top: 0;
-  left: 100%; }
+  top: 44px;
+  left: -1px; }
 
 .navigation .list > li {
   margin: 0 25px;
@@ -10278,10 +10272,7 @@ body[data-lang="ar"] .dropdown-menu {
       color: #2c2c2c; }
     html:not(.sidebar-nav-website) .navigation .list li:hover > ul {
       opacity: 1;
-      visibility: visible;
-      position: absolute;
-      top: 60px;
-      left: 0; }
+      visibility: visible; }
     html:not(.sidebar-nav-website) .mw-live-edit .navigation .menu-overlay {
       position: static; }
     html:not(.sidebar-nav-website) .toggle-inside-menu {
@@ -16116,12 +16107,6 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   border-bottom: 0;
   border-left: 0.3em solid transparent; }
 
-body:not([data-lang="ar"]) .navigation .list li.has-sub-menu > a:after {
-  margin-left: 10px; }
-
-body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
-  margin-right: 10px; }
-
 .navigation li:hover > a:after {
   transform: rotate(-90deg); }
 
@@ -16136,8 +16121,8 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
   opacity: 0;
   visibility: hidden;
   transition: all, 0.3s;
-  top: 0;
-  left: 100%; }
+  top: 44px;
+  left: -1px; }
 
 .navigation .list > li {
   margin: 0 25px;
@@ -16473,10 +16458,7 @@ body[data-lang="ar"] .dropdown-menu {
       color: #2c2c2c; }
     html:not(.sidebar-nav-website) .navigation .list li:hover > ul {
       opacity: 1;
-      visibility: visible;
-      position: absolute;
-      top: 60px;
-      left: 0; }
+      visibility: visible; }
     html:not(.sidebar-nav-website) .mw-live-edit .navigation .menu-overlay {
       position: static; }
     html:not(.sidebar-nav-website) .toggle-inside-menu {
