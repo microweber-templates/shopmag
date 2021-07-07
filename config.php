@@ -1,9 +1,9 @@
 <?php
 
 $config = array();
-$config['name'] = "Shopmag2";
-$config['author'] = "Microweber";
-$config['version'] = 2.7;
+$config['name'] = "Shopmag";
+$config['author'] = "Microweber CMS";
+$config['version'] = 1.0;
 $config['url'] = "http://microweber.com";
 $config['standalone_module_skins'] = true;
 $config['framework'] = "bootstrap5";
