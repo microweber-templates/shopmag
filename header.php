@@ -33,7 +33,7 @@
     </script>
 
     <?php print get_template_stylesheet(); ?>
-    
+
     <?php include('template_settings.php'); ?>
 </head>
 <body class="<?php print helper_body_classes(); ?> <?php print $sticky_navigation; ?> ">
