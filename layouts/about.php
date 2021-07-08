@@ -18,8 +18,6 @@ description: About us
         <module type="layouts" template="about/skin-1"/>
         <module type="layouts" template="about/skin-2"/>
         <module type="layouts" template="about/skin-3"/>
-        <module type="layouts" template="about/skin-4"/>
-        <module type="layouts" template="about/skin-5"/>
     </div>
 
 <?php include template_dir() . "footer.php"; ?>

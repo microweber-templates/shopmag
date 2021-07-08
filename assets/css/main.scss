@@ -7490,8 +7490,8 @@ table {
             opacity: 0;
             visibility: hidden;
             position: absolute;
-            bottom: 20px;
-            right: 0px;
+            bottom: 0px;
+            right: -1px;
             transform: translateX(100%);
             transition: all .6s;
             display: flex;
