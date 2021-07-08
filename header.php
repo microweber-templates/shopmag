@@ -20,6 +20,7 @@
     <link href="//fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
 
     <script>
+        mw.require('icon_selector.js');
         mw.lib.require('bootstrap5js');
         mw.lib.require('bootstrap_select');
 
