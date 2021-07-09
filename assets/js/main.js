@@ -1,6 +1,8 @@
 (function () {
     "use strict"
 
+    mw.lib.require('slick')
+
     var $window = $(window),
         $document = $(document);
 
