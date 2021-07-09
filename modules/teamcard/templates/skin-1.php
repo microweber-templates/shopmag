@@ -52,10 +52,10 @@ description: Skin - 1
                 <div class="image" style="background-image: url('<?php print $default_img; ?>');">
                     <div class="hover">
                         <ul class="socials">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="mdi mdi-facebook"></i></a></li>
+                            <li><a href="#"><i class="mdi mdi-twitter"></i></a></li>
+                            <li><a href="#"><i class="mdi mdi-pinterest"></i></a></li>
+                            <li><a href="#"><i class="mdi mdi-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>

@@ -38,7 +38,7 @@ description: Default Twitter Feed
     .twitter-feed-default ul li .mw-twitter-feed-content {
         color: #757575;
     }
-    
+
     .twitter-feed-default ul li small,
     .twitter-feed-default ul li small a {
         color: #c5c5c5;
@@ -57,7 +57,7 @@ description: Default Twitter Feed
     <div class="twitter-feed-default">
         <ul class="widget-twitter margin-bottom-60 col-md-2">
             <?php foreach ($items as $tweet): ?>
-                <li class="d-inline-block"><i class="fa fa-twitter"></i>
+                <li class="d-inline-block"><i class="mdi mdi-twitter"></i>
                    <span class="mw-twitter-feed-content">
                        <small>
                            <a href="<?php print $tweet['url']; ?>" target="_blank"><?php print $tweet['ago']; ?></a>
