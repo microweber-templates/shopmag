@@ -90,19 +90,19 @@ description: Login default
         <?php if ($have_social_login): ?>
             <div class="socials-login">
                 <?php if ($facebook): ?>
-                    <a href="<?php print api_link('user_social_login?provider=facebook') ?>" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="<?php print api_link('user_social_login?provider=facebook') ?>" class="facebook"><i class="mdi mdi-facebook"></i></a>
                 <?php endif; ?>
 
                 <?php if ($twitter): ?>
-                    <a href="<?php print api_link('user_social_login?provider=twitter') ?>" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="<?php print api_link('user_social_login?provider=twitter') ?>" class="twitter"><i class="mdi mdi-twitter"></i></a>
                 <?php endif; ?>
 
                 <?php if ($google): ?>
-                    <a href="<?php print api_link('user_social_login?provider=google') ?>" class="gplus"><i class="fa fa-google-plus"></i></a>
+                    <a href="<?php print api_link('user_social_login?provider=google') ?>" class="gplus"><i class="mdi mdi-google-plus"></i></a>
                 <?php endif; ?>
 
                 <?php if ($github): ?>
-                    <a href="<?php print api_link('user_social_login?provider=github') ?>" class="github"><i class="fa fa-github"></i></a>
+                    <a href="<?php print api_link('user_social_login?provider=github') ?>" class="github"><i class="mdi mdi-github"></i></a>
                 <?php endif; ?>
             </div>
         <?php endif; ?>

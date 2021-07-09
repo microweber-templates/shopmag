@@ -10,3 +10,4 @@ node_modules/
 /.settings
 /.project
 /nbproject/private/
+gulp/package-lock.json

@@ -16,21 +16,15 @@
     <meta property="og:image" content="{content_image}"/>
     <meta property="og:description" content="{og_description}"/>
     <meta property="og:site_name" content="{og_site_name}"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link href="//fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
 
     <script>
         mw.require('icon_selector.js');
         mw.lib.require('bootstrap5js');
         mw.lib.require('bootstrap_select');
 
-        mw.iconLoader()
-            .addIconSet('materialDesignIcons')
-            .addIconSet('fontAwesome')
-            .addIconSet('iconsMindLine')
-            .addIconSet('iconsMindSolid')
-            .addIconSet('mwIcons')
-            .addIconSet('materialIcons');
+        mw.iconLoader().addIconSet('materialDesignIcons');
     </script>
 
     <script>
@@ -39,12 +33,7 @@
         });
     </script>
 
-
-
-
     <?php print get_template_stylesheet(); ?>
-
- 
 
     <?php include('template_settings.php'); ?>
 </head>

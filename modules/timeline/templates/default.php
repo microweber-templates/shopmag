@@ -68,25 +68,25 @@ description: Default
         <?php endforeach; ?>
     <?php else: ?>
         <div class="event col-md-3 active">
-            <i class="fa fa-calendar"></i>
+            <i class="mdi mdi-calendar"></i>
             <span class="date">20 JUNI 2019</span>
             <span class="desc">Startdaag</span>
         </div>
 
         <div class="event col-md-3">
-            <i class="fa fa-calendar"></i>
+            <i class="mdi mdi-calendar"></i>
             <span class="date">20 Juni 2019</span>
             <span class="desc">Startdaag</span>
         </div>
 
         <div class="event col-md-3">
-            <i class="fa fa-calendar"></i>
+            <i class="mdi mdi-calendar"></i>
             <span class="date">20 Juni 2019</span>
             <span class="desc">Startdaag</span>
         </div>
 
         <div class="event col-md-3">
-            <i class="fa fa-calendar"></i>
+            <i class="mdi mdi-calendar"></i>
             <span class="date">20 Juni 2019</span>
             <span class="desc">Startdaag</span>
         </div>

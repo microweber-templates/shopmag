@@ -63,9 +63,9 @@ description: Skin - 3
                     <div class="content-socials">
                         <div class="icon-show-social"><i class="mdi mdi-plus"></i></div>
                         <ul class="socials">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="mdi mdi-facebook"></i></a></li>
+                            <li><a href="#"><i class="mdi mdi-twitter"></i></a></li>
+                            <li><a href="#"><i class="mdi mdi-pinterest"></i></a></li>
                             <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li>-->
                         </ul>
                     </div>

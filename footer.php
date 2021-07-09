@@ -97,11 +97,10 @@
         </div>
     </div>
 </div>
-
+<!--
 <script>
     mw.lib.require('slick');
-    mw.lib.require('collapse_nav');
-</script>
+</script>-->
 
 <script src="<?php print template_url(); ?>dist/main.min.js"></script>
 </body>

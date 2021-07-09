@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var e = '<div class="switcher-container">' +
-        '<h2>STYLE SWITCHER<a href="#" class="switcher-toggle"><i class="fa fa-cog"></i></a></h2>' +
+        '<h2>STYLE SWITCHER<a href="#" class="switcher-toggle"><i class="mdi mdi-cog"></i></a></h2>' +
         '<div class="selector-box">' +
         '<div class="clearfix"></div>' +
 
