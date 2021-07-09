@@ -26,7 +26,7 @@
             </div>
 
             <div class="col-8 text-center not_found_img">
-                <img src="<?php print template_url(); ?>assets/img/404_graphic.png"/>
+                <img src="<?php print template_url(); ?>assets/images/404_graphic.png"/>
             </div>
         </div>
     </div>
