@@ -45,7 +45,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class="col-12 cloneable">
                                 <div class="shadow-md box">
                                     <div class="icon-holder">
-                                        <i class="mdi mdi-address safe-element"></i>
+                                        <i class="mdi mdi-map-marker safe-element"></i>
                                     </div>
                                     <div class="text-holder allow-drop">
                                         <p><strong>Address</strong></p>
