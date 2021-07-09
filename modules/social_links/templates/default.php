@@ -25,7 +25,7 @@ description: Default
     <?php } ?>
 
     <?php if ($twitter_enabled) { ?>
-        <li> 
+        <li>
             <a href="//twitter.com/<?php print $twitter_url; ?>" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter">
                 <i class="mdi mdi-twitter"></i>
             </a>
