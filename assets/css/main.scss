@@ -1210,10 +1210,8 @@ ul.socials-2 {
   z-index: 99;
 }
 
-#to-top:before {
-  content: "\f077";
+#to-top i {
   color: white;
-  font-family: 'FontAwesome';
   position: relative;
   top: -1px;
 }
