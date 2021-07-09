@@ -3,7 +3,7 @@ const source = '../assets';
 
 const target = '../dist';
 
-const cssMode = 'less' // 'less' || 'sass';
+const cssMode = 'sass' // 'less' || 'sass';
 
 const JSFiles = [
     source +'/plugins/magnific-popup/jquery.magnific-popup.min.js',
@@ -24,9 +24,9 @@ const CSSFiles =  [
 
 const custom = [
     {
-        input: [ `${source}/css/less/main.less` ],
+        input: [ `${source}/css/main.scss` ],
         output: `${source}/css/main.css`,
-        cssMode: 'less',
+        cssMode: 'sass',
         suffix: ''
     }
 ];
@@ -39,5 +39,5 @@ module.exports = {
     target,
     js: JSFiles,
     // css: CSSFiles,
-    // custom
+     custom
 };
