@@ -20,7 +20,7 @@ if (!isset($shop_sidebar)) {
 ?>
 
 
-<div class="edit" rel="content" field="shop-before-content">
+<div class="edit" rel="content" field="content">
     <module type="layouts" template="skin-16"/>
 </div>
 
