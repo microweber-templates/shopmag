@@ -78,13 +78,13 @@ if (!isset($tn[1])) {
                     <?php endif; ?>
 
                     <?php if ($show_fields == false or in_array('thumbnail', $show_fields)): ?>
-                        <a href="<?php print $item['link'] ?>">
-                            <div class="image shop-products pt-7-image">
+                        <a href="<?php print $item['link'] ?>" class="d-flex h-100 w-100">
+                            <div class="image shop-products pt-7-image" style="background-image: url('<?php print thumbnail($item['image'], 600, 800, true); ?>');">
 
-                                <img src="<?php print thumbnail($item['image'], 600, 800); ?>">
+                                <!--                                <img src="--><?php //print thumbnail($item['image'], 600, 800); ?><!--">-->
                                 <div class="hover">
                                     <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="mdi mdi-cart"></i></a>
+                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-default"><i class="mdi mdi-cart"></i></a>
                                     <?php endif; ?>
                                     <?php if ($show_fields == false or ($show_fields != false and in_array('read_more', $show_fields))): ?>
                                         <a href="<?php print $item['link'] ?>" class="btn btn-default"><i class="material-icons">remove_red_eye</i></a>
@@ -98,10 +98,10 @@ if (!isset($tn[1])) {
                     <?php endif; ?>
 
 
-                    <div class="m-t-20">
+                    <div class="mt-4">
                         <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
                             <a href="<?php print $item['link'] ?>">
-                                <div class="title pb-3"><?php print $item['title'] ?></div>
+                                <p class="title"><?php print $item['title'] ?></p>
                             </a>
                         <?php endif; ?>
 
