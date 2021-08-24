@@ -14,10 +14,10 @@ description: News 4
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xl-12 mx-auto">
+        <div class="col-lg-12 mx-auto">
             <div class="row new-world-news-3">
                 <?php if (!empty($data)): ?>
-                    <div class="col-xl-7 m-b-30">
+                    <div class="col-lg-7 m-b-30">
                         <div class="row">
                             <?php foreach ($data as $key => $item): ?>
                                 <?php $itemData = content_data($item['id']); ?>
@@ -46,9 +46,9 @@ description: News 4
                                 <?php endif; ?>
 
                                 <?php if ($key == 1 OR $key == 2): ?>
-                                    <div class="col-6 d-none d-xl-block">
+                                    <div class="col-6 d-none d-lg-block">
                                         <div class="row m-b-30">
-                                            <div class="col-xl-5">
+                                            <div class="col-lg-5">
                                                 <div class="post-holder">
                                                     <a href="<?php print $item['link'] ?>">
                                                         <img src="<?php print thumbnail($item['image'], 300, 225, true); ?>" alt=""/>
@@ -56,7 +56,7 @@ description: News 4
                                                 </div>
                                             </div>
 
-                                            <div class="col-xl-7">
+                                            <div class="col-lg-7">
                                                 <div class="post-holder">
                                                     <small><?php echo date('d M Y', strtotime($item['posted_at'])); ?></small>
                                                     <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
@@ -80,7 +80,7 @@ description: News 4
                         </div>
                     </div>
 
-                    <div class="col-xl-5 d-none d-xl-block">
+                    <div class="col-lg-5 d-none d-lg-block">
                         <?php foreach ($data as $key => $item): ?>
                             <?php $itemData = content_data($item['id']); ?>
                             <?php if ($key == 3): ?>

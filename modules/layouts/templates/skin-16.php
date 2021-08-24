@@ -33,7 +33,7 @@ if (page_title()) {
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 ">
-                <div class="col-1 float-xl-start">
+                <div class="col-1 float-lg-start">
                     <h1 class="page-title"><?php echo $title; ?><span class="text-primary"></span></h1>
                 </div>
                 <div class="col-3 d-flex float-start justify-content-start align-content-center mt-1">

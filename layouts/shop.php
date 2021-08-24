@@ -26,7 +26,7 @@ if (!isset($shop_sidebar)) {
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xl-12 mx-auto">
+        <div class="col-lg-12 mx-auto">
             <div class="row justify-content-between">
 
                 <module type="shop" />

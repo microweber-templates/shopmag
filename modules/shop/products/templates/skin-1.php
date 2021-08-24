@@ -37,7 +37,7 @@ if (!isset($tn[1])) {
 </script>
 
 <?php if (!empty($data)): ?>
-    <div class="row shop-products related-products">
+    <div class="row shop-products pt-7 related-products">
         <?php foreach ($data as $item): ?>
             <?php $categories = content_categories($item['id']); ?>
 
@@ -64,7 +64,7 @@ if (!isset($tn[1])) {
             }
             ?>
 
-            <div class="col-md-6 col-lg-3 col-xl-3 item-<?php print $item['id'] ?> " data-masonry-filter="<?php print $itemCats; ?>" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
+            <div class="col-md-6 col-lg-3 col-lg-3 item-<?php print $item['id'] ?> " data-masonry-filter="<?php print $itemCats; ?>" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
                 <div class="product">
                     <?php if (is_array($item['prices'])): ?>
                         <?php foreach ($item['prices'] as $k => $v): ?>
@@ -79,12 +79,12 @@ if (!isset($tn[1])) {
 
                     <?php if ($show_fields == false or in_array('thumbnail', $show_fields)): ?>
                         <a href="<?php print $item['link'] ?>">
-                            <div class="image shop-products-image">
+                            <div class="image shop-products pt-7-image">
 
                                 <img src="<?php print thumbnail($item['image'], 600, 800); ?>">
                                 <div class="hover">
                                     <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i></a>
+                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="mdi mdi-cart"></i></a>
                                     <?php endif; ?>
                                     <?php if ($show_fields == false or ($show_fields != false and in_array('read_more', $show_fields))): ?>
                                         <a href="<?php print $item['link'] ?>" class="btn btn-default"><i class="material-icons">remove_red_eye</i></a>

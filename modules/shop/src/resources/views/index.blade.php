@@ -16,10 +16,10 @@
         );
     }
 </script>
-<div class="row shop-products">
+<div class="row shop-products pt-7">
 
     @if($products->hasFilter())
-    <div class="shopmag-shop-column shopmag-shop-left-column col-xl-3">
+    <div class="shopmag-shop-column shopmag-shop-left-column col-lg-3">
         <nav class=" navbar-expand-lg navbar-light">
                 <button class="navbar-toggler btn-outline-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#shopmag-shop-filters-hamburger" aria-controls="shopmag-shop-filters-hamburger" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="mdi mdi-filter-outline"></i>
@@ -46,23 +46,23 @@
     </div>
     @endif
 
-    <div class="shopmag-shop-column shopmag-shop-right-column @if($products->hasFilter()) col-xl @else col-xl-12 @endif">
+    <div class="shopmag-shop-column shopmag-shop-right-column @if($products->hasFilter()) col-lg @else col-lg-12 @endif">
         <div class="row">
-            <div class="col-xxl-6 col-xl-5 col-lg-7 col-lg-2 col-lg-5 py-xl-0 py-4">
+            <div class="col-xxl-6 col-lg-5 col-lg-7 col-lg-2 col-lg-5 py-lg-0 py-4">
                 <p> <?php _e("Displaying"); ?> {{$products->count()}} <?php _e("of"); ?> {{ $products->total() }}  <?php _e("result(s)"); ?>.</p>
             </div>
-            <div class="col-xxl-6 col-xl-7 col-lg-5 d-block d-sm-flex justify-content-end">
+            <div class="col-xxl-6 col-lg-7 col-lg-5 d-block d-sm-flex justify-content-end">
                 <div class="col-12 col-sm px-1 ms-auto">{!! $products->limit(); !!}</div>
                 <div class="col-12 col-sm px-1 ms-auto">{!! $products->sort(); !!}</div>
                 @if($products->hasFilter())
-                <a class="shopmag-shop-filter d-xl-block d-none col-12 col-sm-1 btn btn-outline-primary align-self-center px-2 mb-3 ms-auto text-end"><i class="theme-icon-slider mdi mdi-filter-outline"></i></a>
+                <a class="shopmag-shop-filter d-lg-block d-none col-12 col-sm-1 btn btn-outline-primary align-self-center px-2 mb-3 ms-auto text-end"><i class="theme-icon-slider mdi mdi-filter-outline"></i></a>
                 @endif
             </div>
         </div>
 
         <div class="row">
             @foreach($products->results() as $product)
-                <div class="col-md-6 col-lg-4 col-xl-4 item-{{$product->id}} mb-5">
+                <div class="col-md-6 col-lg-4 col-lg-4 item-{{$product->id}} mb-5">
 
                     <div class="product">
                         <input type="hidden" name="content_id" value="{{$product->id}}"/>
@@ -109,7 +109,7 @@
 
                                 {{--<div class="d-md-none col-6 d-flex justify-content-end">--}}
                                    {{--<?php if ($product->inStock == true): ?>--}}
-                                    {{--<a href="javascript:;" onclick="mw.cart.add_item('{{$product->id}}','{{$product->price}}', '{{$product->title}}')" class="btn btn-outline-primary"><i class="material-icons">shopping_cart</i></a>--}}
+                                    {{--<a href="javascript:;" onclick="mw.cart.add_item('{{$product->id}}','{{$product->price}}', '{{$product->title}}')" class="btn btn-outline-primary"><i class="mdi mdi-cart"></i></a>--}}
                                        {{--<?php else: ?>--}}
                                     {{--<span class="text-danger p-1"><i class="material-icons" style="font-size: 18px;">remove_shopping_cart</i> <?php _lang("Out of Stock", 'templates/shopmag') ?></span>--}}
                                     {{--<?php endif; ?>--}}

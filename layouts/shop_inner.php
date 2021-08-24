@@ -38,7 +38,7 @@ $prev = prev_content();
 <div class="shop-inner-page pt-5" id="shop-content-<?php print CONTENT_ID; ?>" field="shop-inner-page" rel="page">
     <div class="container-fluid fx-particles">
         <div class="row justify-content-center">
-            <div class="col-xl-12">
+            <div class="col-lg-12">
                 <div class="row product-holder pb-5">
                     <div class="col-12 col-lg-7">
                         <module type="pictures" rel="content" template="skin-6"/>

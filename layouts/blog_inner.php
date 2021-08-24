@@ -70,7 +70,7 @@ $itemTags = content_tags($post['id']);
     <div class="blog-inner-page" id="blog-content-<?php print CONTENT_ID; ?>">
         <div class="container  m-b-50">
             <div class="row">
-                <div class="col-xl-6 mx-auto">
+                <div class="col-lg-6 mx-auto">
                     <div class="description edit dropcap typography-area" field="content" rel="content">
                         <?php
                         //element_display('paragraph-highlight.php');

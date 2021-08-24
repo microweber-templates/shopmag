@@ -22,18 +22,18 @@ if ($columns) {
 }
 
 
-$columns_xl = get_option('columns-xl', $params['id']);
+$columns_xl = get_option('columns-lg', $params['id']);
 $thumb_quality = '1920';
 if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
-    if ($columns_xl == 'col-xl-12') {
+    if ($columns_xl == 'col-lg-12') {
         $thumbs_columns = 1;
-    } else if ($columns_xl == 'col-xl-6') {
+    } else if ($columns_xl == 'col-lg-6') {
         $thumbs_columns = 2;
-    } else if ($columns_xl == 'col-xl-4') {
+    } else if ($columns_xl == 'col-lg-4') {
         $thumbs_columns = 3;
-    } else if ($columns_xl == 'col-xl-3') {
+    } else if ($columns_xl == 'col-lg-3') {
         $thumbs_columns = 4;
-    } else if ($columns_xl == 'col-xl-2') {
+    } else if ($columns_xl == 'col-lg-2') {
         $thumbs_columns = 6;
     }
 
@@ -44,7 +44,7 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xl-12 mx-auto">
+        <div class="col-lg-12 mx-auto">
             <div class="row new-world-news">
                 <?php if (!empty($data)): ?>
                     <?php foreach ($data as $key => $item): ?>

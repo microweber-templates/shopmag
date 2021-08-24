@@ -13,7 +13,7 @@ description: Blog
 
 <div class="container-fluid">
    <div class="row">
-       <div class="col-xl-12 mx-auto">
+       <div class="col-lg-12 mx-auto">
            <div class="row new-world-news">
                <?php if (!empty($data)): ?>
                    <?php foreach ($data as $key => $item): ?>
