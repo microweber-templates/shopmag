@@ -19943,28 +19943,30 @@ ul.socials-2 li a:hover {
   .masonry-team .masonry-grid-works__item_w-25 {
     width: 100%; } }
 
-.shop-inner-page .shop-inner-gallery {
-  padding-inline-start: 140px;
-  position: relative; }
+@media screen and (min-width: 1360px) {
+  .shop-inner-page .shop-inner-gallery {
+    display: flex; } }
+@media screen and (min-width: 1360px) {
   .shop-inner-page .shop-inner-gallery .shop-inner-big-image img {
-    width: 100%; }
-  .shop-inner-page .shop-inner-gallery .shop-inner-gallery-thumbnails {
-    position: absolute;
-    width: 120px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    overflow-y: auto;
-    overflow-x: hidden; }
-    .shop-inner-page .shop-inner-gallery .shop-inner-gallery-thumbnails a {
-      display: block;
-      height: 120px;
-      width: 100%;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      margin: 0 5px 10px; }
+    width: 100%; } }
+.shop-inner-page .shop-inner-gallery .shop-inner-gallery-thumbnails {
+  display: flex;
+  z-index: 1;
+  flex-direction: column; }
+  @media screen and (min-width: 1360px) {
+    .shop-inner-page .shop-inner-gallery .shop-inner-gallery-thumbnails {
+      margin-right: 20px;
+      width: 266px; } }
+  .shop-inner-page .shop-inner-gallery .shop-inner-gallery-thumbnails a {
+    height: 300px;
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0px 10px; }
+    @media screen and (min-width: 1360px) {
+      .shop-inner-page .shop-inner-gallery .shop-inner-gallery-thumbnails a {
+        height: 120px; } }
 .shop-inner-page .price, .shop-inner-page .price-old {
   font-size: 20px !important;
   letter-spacing: 0;

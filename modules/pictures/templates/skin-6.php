@@ -14,17 +14,17 @@ description: Skin 6
 
 <?php
 
-    $pictureElementId = 'module-image-' . $params['id'];
+$pictureElementId = 'module-image-' . $params['id'];
 
 if (is_array($data)): ?>
     <div class="shop-inner-gallery">
         <?php if (sizeof($data) > 1) { ?>
             <div class="shop-inner-gallery-thumbnails">
                 <?php $count = -1; foreach ($data as $item): $count++; ?>
-                    <a
-                        href="<?php print thumbnail($item['filename'], 1920, 1920); ?>"
-                        onclick="setProductImage('<?php print $pictureElementId; ?>', '<?php print thumbnail($item['filename'], 1920, 1920); ?>', <?php print $count; ?>);return false;"
-                        style="background-image: url('<?php print thumbnail ($item['filename'], 200, 200); ?>');">
+                    <a class="mx-0"
+                       href="<?php print thumbnail($item['filename'], 1920, 1920); ?>"
+                       onclick="setProductImage('<?php print $pictureElementId; ?>', '<?php print thumbnail($item['filename'], 1920, 1920); ?>', <?php print $count; ?>);return false;"
+                       style="background-image: url('<?php print thumbnail ($item['filename'], 800, 800); ?>');">
                     </a>
                 <?php endforeach; ?>
             </div>
@@ -57,7 +57,7 @@ if (is_array($data)): ?>
         var gallery = <?php print json_encode($data); ?>;
 
         document.getElementById('<?php print $pictureElementId; ?>').addEventListener('click', function(){
-             mw.gallery(gallery, Number(this.dataset.index || 0));
+            mw.gallery(gallery, Number(this.dataset.index || 0));
         });
     </script>
 

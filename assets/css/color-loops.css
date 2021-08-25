@@ -1,0 +1,138 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jun 28, 2019, 11:47:53 AM
+    Author     : m.petkov
+*/
+/****************************
+           GENERAL
+*****************************/
+/* Background */
+/* Font Size and Family */
+/* Colors */
+/* Basic Meida Queries */
+/* Elements */
+/* Radiuses */
+/*Colors for color mixer*/
+/****************************
+           HEADER
+*****************************/
+/*When to open Main Menu Burger*/
+/*When to open Second Menu Burger*/
+/*Header Menu Navigation*/
+/*Header Dropdown menu*/
+/*Mobile Main Menu Navigation*/
+/*Mobile Main Menu Navigation*/
+/*Sidebar nav*/
+/*Header member nav*/
+/*Header burger*/
+/*Header social*/
+/*Logo on Header*/
+/*Social icons General*/
+/*Color mixer*/
+.bg-name,
+.badge-name,
+.icon-bg-name,
+.hr-bg-name {
+  background-color: #707070; }
+
+.module-hr-bg-name div[class*="hr-"] {
+  background-color: #707070 !important; }
+
+.text-name {
+  color: #707070 !important; }
+
+.text-name > *:not(font),
+.text-name .btn-link,
+.icon-name {
+  color: #707070 !important; }
+
+.bg-name,
+.badge-name,
+.icon-bg-name,
+.hr-bg-name {
+  background-color: #2d2d2d; }
+
+.module-hr-bg-name div[class*="hr-"] {
+  background-color: #2d2d2d !important; }
+
+.text-name {
+  color: #2d2d2d !important; }
+
+.text-name > *:not(font),
+.text-name .btn-link,
+.icon-name {
+  color: #2d2d2d !important; }
+
+.bg-name,
+.badge-name,
+.icon-bg-name,
+.hr-bg-name {
+  background-color: #2c2c2c; }
+
+.module-hr-bg-name div[class*="hr-"] {
+  background-color: #2c2c2c !important; }
+
+.text-name {
+  color: #2c2c2c !important; }
+
+.text-name > *:not(font),
+.text-name .btn-link,
+.icon-name {
+  color: #2c2c2c !important; }
+
+.bg-name,
+.badge-name,
+.icon-bg-name,
+.hr-bg-name {
+  background-color: #707070; }
+
+.module-hr-bg-name div[class*="hr-"] {
+  background-color: #707070 !important; }
+
+.text-name {
+  color: #707070 !important; }
+
+.text-name > *:not(font),
+.text-name .btn-link,
+.icon-name {
+  color: #707070 !important; }
+
+.bg-name,
+.badge-name,
+.icon-bg-name,
+.hr-bg-name {
+  background-color: #fff; }
+
+.module-hr-bg-name div[class*="hr-"] {
+  background-color: #fff !important; }
+
+.text-name {
+  color: #fff !important; }
+
+.text-name > *:not(font),
+.text-name .btn-link,
+.icon-name {
+  color: #fff !important; }
+
+.bg-name,
+.badge-name,
+.icon-bg-name,
+.hr-bg-name {
+  background-color: #bfbfbf; }
+
+.module-hr-bg-name div[class*="hr-"] {
+  background-color: #bfbfbf !important; }
+
+.text-name {
+  color: #bfbfbf !important; }
+
+.text-name > *:not(font),
+.text-name .btn-link,
+.icon-name {
+  color: #bfbfbf !important; }
+
+/*# sourceMappingURL=color-loops.css.map */
