@@ -79,7 +79,7 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
                                     <a href="<?php print $item['link'] ?>"><h3 class="m-b-10"><?php print $item['title'] ?></h3></a>
                                 <?php endif; ?>
 
-                                <small><?php echo date('d M Y', strtotime($item['posted_at'])); ?></small>
+                                <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
 
                                 <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
                                     <p><?php print $item['description'] ?></p>

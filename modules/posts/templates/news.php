@@ -24,7 +24,7 @@ description: News 1
                                 <div class="post-holder">
                                     <div class="thumbnail justify-content-bottom align-items-end d-flex flex-cloumns" style="background-image: url('<?php print thumbnail($item['image'], 1135, 540, true); ?>');">
                                         <div>
-                                            <small><?php echo date('d M Y', strtotime($item['posted_at'])); ?></small>
+                                            <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
 
                                             <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
                                                 <a href="<?php print $item['link'] ?>"><h3><?php print $item['title'] ?></h3></a>
@@ -52,7 +52,7 @@ description: News 1
                                         </div>
                                     </a>
 
-                                    <small><?php echo date('d M Y', strtotime($item['posted_at'])); ?></small>
+                                    <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
                                     <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
                                         <a href="<?php print $item['link'] ?>"><h3><?php print $item['title'] ?></h3></a>
                                     <?php endif; ?>
