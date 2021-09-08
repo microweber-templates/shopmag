@@ -19993,6 +19993,33 @@ ul.socials-2 li a:hover {
   .shop-products .product a,
   .shop-products .product a:hover {
     text-decoration: none; }
+  .shop-products .product .image-square-2-colums-horizontal {
+    background-color: white;
+    overflow: hidden;
+    height: 460px;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .shop-products .product .image-square-3-colums-horizontal {
+    background-color: white;
+    overflow: hidden;
+    height: 320px;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .shop-products .product .image-square-4-colums-horizontal {
+    background-color: white;
+    overflow: hidden;
+    height: 240px;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
   .shop-products .product .image {
     overflow: hidden;
     background-color: white;
@@ -20001,7 +20028,7 @@ ul.socials-2 li a:hover {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px; }
+    height: 600px; }
     .shop-products .product .image img {
       width: 100%;
       height: auto;
@@ -20075,9 +20102,6 @@ ul.socials-2 li a:hover {
   .shop-products .product .product-label {
     min-width: 60px;
     position: absolute;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
     background: #2c2c2c;
     color: #fff;
     font-size: 12px;

@@ -3678,6 +3678,41 @@ ul.socials-2 {
             text-decoration: none;
         }
 
+
+        .image-square-2-colums-horizontal {
+            background-color: white;
+            overflow: hidden;
+            height: 460px;
+            position: relative;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .image-square-3-colums-horizontal {
+            background-color: white;
+            overflow: hidden;
+            height: 320px;
+            position: relative;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .image-square-4-colums-horizontal {
+            background-color: white;
+            overflow: hidden;
+            height: 240px;
+            position: relative;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+
         .image {
             overflow: hidden;
             background-color: rgb(255, 255, 255);
@@ -3686,7 +3721,7 @@ ul.socials-2 {
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
-            height: 500px;
+            height: 600px;
 
             img {
                 width: 100%;
@@ -3696,7 +3731,7 @@ ul.socials-2 {
                 transform: scale(1);
 
                 &:hover {
-                transform: scale(1.1);
+                    transform: scale(1.1);
                 }
             }
 
@@ -3800,9 +3835,9 @@ ul.socials-2 {
         .product-label {
             min-width: 60px;
             position: absolute;
-            -webkit-border-radius: $borderRadiusButtons;
-            -moz-border-radius: $borderRadiusButtons;
-            border-radius: $borderRadiusButtons;
+            //-webkit-border-radius: $borderRadiusButtons;
+            //-moz-border-radius: $borderRadiusButtons;
+            //border-radius: $borderRadiusButtons;
             background: $primary;
             color: $light;
             font-size: $paragraph-sm;
