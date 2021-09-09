@@ -14,7 +14,7 @@ description: Terms of use
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-    <div class="edit main-content" rel="module" field="shopmag_content">
+    <div class="edit main-content" rel="content" field="shopmag_content">
         <module type="layouts" template="skin-11"/>
         <module type="layouts" template="skin-13"/>
     </div>

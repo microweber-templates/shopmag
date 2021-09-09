@@ -14,7 +14,7 @@ position: 4
 
 <?php include template_dir() . "header.php"; ?>
 
-<div class="edit" rel="module" field="content">
+<div class="edit" rel="content" field="content">
     <module type="layouts" template="skin-16"/>
 </div>
 
@@ -23,7 +23,7 @@ position: 4
 <module type="shop" />
 
 
-<div class="edit" rel="module" field="shop-after-content">
+<div class="edit" rel="content" field="shop-after-content">
     <p class="element"></p>
 </div>
 

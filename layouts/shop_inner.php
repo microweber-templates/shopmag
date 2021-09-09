@@ -38,14 +38,14 @@ $prev = prev_content();
             <div class="row justify-content-center">
                 <div class="row product-holder">
                     <div class="col-12 col-md-6 col-lg-6">
-                        <module type="pictures" rel="module" template="skin-6"/>
+                        <module type="pictures" rel="content" template="skin-6"/>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-6 relative product-info-wrapper">
                         <div class="product-info">
                             <div class="product-info-content">
                                 <div class="heading mt-4 pb-0 mb-2">
-                                    <h1 class="edit d-inline-block" field="title" rel="module"><?php print content_title(); ?></h1>
+                                    <h1 class="edit d-inline-block" field="title" rel="content"><?php print content_title(); ?></h1>
 
                                     <div class="next-previous-content float-end">
                                         <?php if ($prev != false) { ?>
@@ -106,7 +106,7 @@ $prev = prev_content();
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="description">
-                                            <div class="edit" field="content_body" rel="module">
+                                            <div class="edit" field="content_body" rel="content">
                                                 <p><?php _lang("How to write product descriptions that sell", 'templates/big') ?></p>
                                                 <p><?php _lang("One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.", 'templates/big') ?></p>
 
@@ -126,7 +126,7 @@ $prev = prev_content();
                         </div>
                     </div>
 
-                    <div class="edit safe-mode nodrop py-5" field="related_products" rel="module">
+                    <div class="edit safe-mode nodrop py-5" field="related_products" rel="content">
                         <div class="col-12 text-start mb-4">
                             <h2 class="related-title"><?php _lang('Related products', 'templates/shopmag'); ?></h2>
                         </div>
