@@ -26,7 +26,7 @@
     </div>
 
     <div class="row m-0 footer-newsletter">
-        <div class="col-12 col-sm-9 p-0">
+        <div class="col-sm-9 p-0">
             <input type="email" name="email" required class="form-control mb-2 input-lg" placeholder="Email"/>
         </div>
 
