@@ -30,7 +30,7 @@
             <input type="email" name="email" required class="form-control mb-2 input-lg" placeholder="Email"/>
         </div>
 
-        <div class="col-12 col-sm-3 px-1">
+        <div class="col-sm-3 px-1">
             <button class="btn btn-primary btn-block text-center" type="submit" style="padding: 11px !important;"><?php _e('Go'); ?></button>
         </div>
     </div>
