@@ -24,7 +24,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section edit safe-mode nodrop" <?php print $layout_classes; ?> field="layout-about-skin-1-<?php print $params['id'] ?>" rel="content">
+<section class="section edit safe-mode nodrop" <?php print $layout_classes; ?> field="layout-about-skin-1-<?php print $params['id'] ?>" rel="module">
     <div class="container-fluid">
         <div class="row gp-image-text-with-icon">
             <div class="item-image col-lg-6 col-md-12 col-12">

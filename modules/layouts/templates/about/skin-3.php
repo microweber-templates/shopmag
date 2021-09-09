@@ -24,7 +24,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section edit safe-mode nodrop" data-background-position="center bottom" field="layout-blockquotes-skin-3-<?php print $params['id'] ?>" rel="content">
+<section class="section edit safe-mode nodrop" data-background-position="center bottom" field="layout-blockquotes-skin-3-<?php print $params['id'] ?>" rel="module">
     <div class="container-fluid">
         <div class="gp-text-with-icon-2">
             <div data-section-id="gp-avatars" data-section-type="gp-avatars-section" class="gp-section-wrapper not-fullwidth-section">

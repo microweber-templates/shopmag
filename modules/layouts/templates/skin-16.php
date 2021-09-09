@@ -29,7 +29,7 @@ if (page_title()) {
 }
 ?>
 
-<section class="section edit safe-mode nodrop" field="layout-skin-11-<?php print $params['id'] ?>" rel="content">
+<section class="section edit safe-mode nodrop" field="layout-skin-11-<?php print $params['id'] ?>" rel="module">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 ">
