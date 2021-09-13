@@ -1,5 +1,9 @@
 <?php
 
+
+autoload_add_namespace(__DIR__ . '/src/', 'MicroweberPackages\\Template\\Shopmag\\');
+
+
 api_expose('theme_colors_palette_css');
 
 function theme_colors_palette_css($params = false)
