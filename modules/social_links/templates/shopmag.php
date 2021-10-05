@@ -19,7 +19,7 @@ description: Default
     <?php if ($facebook_enabled) { ?>
         <li>
             <a href="//facebook.com/<?php print $facebook_url; ?>" rel="noopener" aria-describedby="a11y-new-window-message" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook">
-                <i class="fab fa-facebook"></i>
+                <i class="mdi mdi-facebook"></i>
             </a>
         </li>
     <?php } ?>
@@ -27,7 +27,7 @@ description: Default
     <?php if ($twitter_enabled) { ?>
         <li>
             <a href="//twitter.com/<?php print $twitter_url; ?>" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter">
-                <i class="fab fa-twitter"></i>
+                <i class="mdi mdi-twitter"></i>
             </a>
         </li>
     <?php } ?>
@@ -43,7 +43,7 @@ description: Default
     <?php if ($pinterest_enabled) { ?>
         <li>
             <a href="//pinterest.com/<?php print $pinterest_url; ?>" target="_blank" data-toggle="tooltip" data-placement="top" title="Pinterest">
-                <i class="fab fa-pinterest"></i>
+                <i class="mdi mdi-pinterest"></i>
             </a>
         </li>
     <?php } ?>
