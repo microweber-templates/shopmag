@@ -28,7 +28,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="container-fluid">
         <div class="row gp-image-text-with-icon">
             <div class="item-image col-lg-6 col-md-12 col-12">
-                <img src="<?php print template_url(); ?>assets/img/video-bg.jpg">
+                <img src="<?php print template_url(); ?>assets/images/about-skin-1.jpg">
             </div>
             <div class="d-flex align-items-center col-lg-6 col-md-12 col-12">
                 <div class="content-text-with-icon">
