@@ -217,6 +217,12 @@ h6 {
     line-height: 28px;
 }
 
+.mw-tooltip-content {
+    h6 {
+        color: #FFFFFF!important;
+    }
+}
+
 .text-white {
   h1, h2, h3, h4, h5, h6, p {
     color: $textLight !important;
