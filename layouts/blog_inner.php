@@ -70,7 +70,7 @@
                         ?>
                     </div>
 
-                    <div class="text-end m-b-20">
+                    <div class="text-end text-right m-b-20">
                         <h6 class="text-dark"><?php echo date('d M Y', strtotime($post_updated_at)); ?></h6>
                     </div>
 

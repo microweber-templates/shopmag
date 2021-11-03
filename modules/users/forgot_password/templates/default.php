@@ -2,7 +2,7 @@
 
 
 <?php if (is_logged() == false): ?>
-    <div class="iq-works-box text-start m-40 boots-form">
+    <div class="iq-works-box text-start text-left m-40 boots-form">
         <div class="box-static box-border-top padding-30" id="form-holder{rand}">
             <div class="alert alert-mini alert-danger margin-bottom-10" style="margin: 0;display: none;"></div>
             <br/>
