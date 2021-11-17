@@ -13,18 +13,38 @@ class UpdateShopmagTemplateEditFieldNames extends Migration
      */
     public function up()
     {
+
+
         if (Schema::hasTable('content_fields')) {
-            DB::table('content_fields')
-                ->where('field', 'new-world_content')
-                ->update(['field' => 'content']);
 
+            $fields = DB::table('content_fields')
+                ->whereIn('field', ['shopmag_content', 'content'])
+                ->where('rel_type', 'content')
+                ->get();
 
-            DB::table('content_fields')
-                ->where('field', 'shopmag_content')
-                ->update(['field' => 'content']);
+            if ($fields) {
+                foreach ($fields as $field) {
+                    // move to content table
+                    DB::table('content')
+                        ->where('id', $field->rel_id)
+                        ->limit(1)
+                        ->update(['content' => $field->value]);
+
+                    //clean old fields
+                    DB::table('content_fields')
+                        ->where('field', 'content')
+                        ->where('rel_id', $field->rel_id)
+                        ->where('rel_type', $field->rel_type)
+                        ->delete();
+
+                    DB::table('content_fields')
+                        ->where('id', $field->id)
+                        ->delete();
+
+                }
+            }
+
         }
-
-
 
     }
 
