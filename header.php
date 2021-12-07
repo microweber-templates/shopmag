@@ -16,8 +16,10 @@
     <meta property="og:image" content="{content_image}"/>
     <meta property="og:description" content="{og_description}"/>
     <meta property="og:site_name" content="{og_site_name}"/>
-    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="//fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap">
+    <link rel="stylesheet" href="<?php print template_url(); ?>assets/fonts/fontawesome-free-5.15.4-web/css/all.css"/>
 
     <script>
         mw.require('icon_selector.js');
@@ -37,8 +39,6 @@
             $('.selectpicker').selectpicker();
         });
     </script>
-
-    <script src="<?php print template_url() ?>assets/js/main.js"></script>
 
     <?php print get_template_stylesheet(); ?>
 
