@@ -106,9 +106,11 @@ description: 4 columns horizontal
 
 
                                 <div class="mb-2">
+                                    @if(!empty($product->tags) )
                                     @foreach($product->tags as $tag)
                                         <span class="badge badge-lg p-0"><a href="?tags[]={{$tag->slug}}">{{$tag->name}}</a></span>
                                     @endforeach
+                                    @endif
                                 </div>
 
                                 <div class="row justify-content-center">
