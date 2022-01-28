@@ -194,7 +194,7 @@
                     <form>
                         <fieldset>
                             <div class="form-group mb-2">
-                                <label for="exampleInputEmail1"><?php _lang("Email address", "templates/shopmag"); ?> <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="<?php _lang("Tooltip text goes here and tells something", "templates/shopmag"); ?>."></i></label>
+                                <label for="exampleInputEmail1"><?php _lang("Email address", "templates/shopmag"); ?> <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="<?php _lang("Tooltip text goes here and tells something", "templates/shopmag"); ?>."></i></label>
                                 <input type="email" class="form-control mb-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="<?php _lang("Enter email", "templates/shopmag"); ?>">
                                 <small id="emailHelp" class="form-text text-muted"><?php _lang("We'll never share your email with anyone else.", "templates/shopmag"); ?></small>
                             </div>

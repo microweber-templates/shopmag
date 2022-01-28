@@ -15,7 +15,7 @@
 
 <?php if ($header_posts == 'true'): ?>
     <li class="btn-posts ms-4">
-        <a href="javascript:;" class="dropdown-toggle js-show-posts"><i class="fas fa-blog"></i></a>
+        <a href="javascript:;" class="dropdown-toggle js-show-posts"><i class="fa fa-blog"></i></a>
     </li>
 <?php endif; ?>
 
