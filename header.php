@@ -19,8 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="//fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap">
-    <link rel="stylesheet" href="<?php print template_url(); ?>assets/fonts/fontawesome-free-5.15.4-web/css/all.css"/>
-
+ 
     <script>
         mw.require('icon_selector.js');
         mw.lib.require('bootstrap5js');

@@ -26,10 +26,10 @@ description: Default Instagram Feed
 
                                 <div class="counts">
                                     <?php if (isset($photo['edge_liked_by']['count'])) : ?>
-                                        <span><i class="fas fa-heart"></i> <?php echo $photo['edge_liked_by']['count']; ?></span>
+                                        <span><i class="fa fa-heart"></i> <?php echo $photo['edge_liked_by']['count']; ?></span>
                                     <?php endif; ?>
                                     <?php if (isset($photo['edge_media_to_comment']['count'])) : ?>
-                                        <span><i class="fas fa-comment"></i> <?php echo $photo['edge_media_to_comment']['count']; ?></span>
+                                        <span><i class="fa fa-comment"></i> <?php echo $photo['edge_media_to_comment']['count']; ?></span>
                                     <?php endif; ?>
                                 </div>
                             </div>

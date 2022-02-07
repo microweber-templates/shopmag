@@ -8,7 +8,7 @@
                     </div>
                     <div class="col-lg-9">
                         <div class="btn-posts text-end text-right d-block d-lg-none">
-                            <a href="javascript:;" class="btn btn-primary js-show-posts">Close <span class="fas fa-times"></span></a>
+                            <a href="javascript:;" class="btn btn-primary js-show-posts">Close <span class="fa fa-times"></span></a>
                         </div>
 
                         <module type="posts" template="header-posts" limit="6"/>

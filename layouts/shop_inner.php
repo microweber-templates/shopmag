@@ -86,9 +86,9 @@ $prev = prev_content();
 
                                         <div class="availability col-6 text-end text-right align-self-center">
                                             <?php if ($in_stock == true): ?>
-                                                <span class="text-success"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/big') ?></span> <span class="text-muted"><?php if ($available_qty != ''): ?>(<?php echo $available_qty; ?>)<?php endif; ?></span>
+                                                <span class="text-success"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/big') ?></span> <span class="text-muted"><?php if ($available_qty != ''): ?>(<?php echo $available_qty; ?>)<?php endif; ?></span>
                                             <?php else: ?>
-                                                <span class="text-danger"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _lang("Out of Stock", 'templates/big') ?></span>
+                                                <span class="text-danger"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("Out of Stock", 'templates/big') ?></span>
                                             <?php endif; ?>
                                         </div>
                                     </div>

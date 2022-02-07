@@ -43,7 +43,7 @@ if (isset($params['content-id'])) {
             <?php else: ?>
 
                 <button class="btn btn-primary d-block w-100 float-end mt-5" type="button" onclick="mw.cart.add('.mw-add-to-cart-<?php print $params['id'] ?>', '<?php print $title; ?>');">
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fa fa-shopping-cart"></i>
                     <?php _lang($button_text !== false ? $button_text : "Add to cart", "templates/shopmag"); ?>
                 </button>
                 <div class="clearfix"></div>
