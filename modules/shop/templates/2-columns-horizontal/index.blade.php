@@ -90,7 +90,7 @@ description: 2 columns horizontal
                                         <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-{{$product->id}}', '{{$product->price}}','{{$product->title}}');" class="btn btn-default"><i class="mw-micon-Shopping-Cart"></i></a>
                                         <a href="{{$product->link()}}" class="btn btn-default"><i class="mw-micon-Eye-2"></i></a>
                                         <?php else: ?>
-                                        <a href="javascript:;" onclick="alert('This product is out of stock');" class=" btn btn-default"><i class="mw-micon-Shopping-Cart-off"></i></a>
+                                        <a href="javascript:;" onclick="alert('This product is out of stock');" class=" btn btn-default"><i class="mw-micon-Close"></i></a>
                                         <a href="{{$product->link()}}" class="btn btn-default"><i class="mw-micon-Eye-2"></i></a>
                                         <?php endif; ?>
 
