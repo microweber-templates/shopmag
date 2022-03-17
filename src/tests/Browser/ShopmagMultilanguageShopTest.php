@@ -27,6 +27,8 @@ class ShopmagMultilanguageShopTest extends DuskTestCaseMultilanguage
                 $browser->fillForm();
             });
 
+            save_option('current_template', $this->template_name,'template');
+
             $browser->within(new AdminContentMultilanguage(), function ($browser) {
                 $browser->addLanguage('bg_BG');
                 $browser->addLanguage('en_US');

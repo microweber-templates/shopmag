@@ -19,6 +19,8 @@ class ShopmagLiveEditTemplateTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
 
+            save_option('current_template', $this->template_name,'template');
+
             if (defined('TEMPLATE_DIR') == false) {
                 define('TEMPLATE_DIR', templates_path() . $this->template_name . DS);
             }
