@@ -61,18 +61,17 @@ class ShopmagShopProductLinksScraper extends BaseComponent
         $this->productLinks = $browser->script("
 
                 var links = [];
-                $('.product').each(function(index) {
+                $('.module-shop .col-xl-4').each(function(index) {
 
                     var product = {};
-                    product.link = $('.product').eq(index).find('a').attr('href');
-                    product.title = $('.product').eq(index).find('.heading-holder').text().trim();
+                    product.link = $('.module-shop .col-xl-4').eq(index).find('a').attr('href');
+                    product.title = $('.module-shop .col-xl-4').eq(index).find('h6').text().trim();
 
-                    var scrapedPrice = $('.product').eq(index).find('.price').text().trim();
+                    var scrapedPrice = $('.module-shop .col-xl-4').eq(index).find('.money').text().trim();
                     scrapedPrice = scrapedPrice.replace('$currencySymbol', '');
                     scrapedPrice = scrapedPrice.replace(' ', '');
                     product.price = scrapedPrice;
 
-                    product.content_id = $('.product').eq(index).find('[name=\"content_id\"]').val();
                     links.push(product);
                 });
 
