@@ -5,7 +5,7 @@
     </div>
     <div class="col-6 p-5 align-self-center">
 
-        <a href="{{site_url($product->url)}}">
+        <a href="{{$product->link()}}">
             <h5 class="pb-3">{{$product->title}}</h5>
         </a>
 

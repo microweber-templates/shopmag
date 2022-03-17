@@ -82,17 +82,17 @@ description: 2 columns vertical
                         <div class="product">
                             <input type="hidden" name="content_id" value="{{$product->id}}"/>
 
-                            <a href="{{site_url($product->url)}}">
+                            <a href="{{$product->link()}}">
                                 <div class="image">
                                     <img src="{{$product->thumbnail(600,800, true)}}" alt="">
 
                                     <div class="hover">
                                         <?php if ($product->inStock == true): ?>
                                         <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-{{$product->id}}', '{{$product->price}}','{{$product->title}}');" class="btn btn-default"><i class="mdi mdi-shopping"></i></a>
-                                        <a href="{{site_url($product->url)}}" class="btn btn-default"><i class="mdi mdi-eye"></i></a>
+                                        <a href="{{$product->link()}}" class="btn btn-default"><i class="mdi mdi-eye"></i></a>
                                         <?php else: ?>
                                         <a href="javascript:;" onclick="alert('This product is out of stock');" class=" btn btn-default"><i class="mdi mdi-cart-off"></i></a>
-                                        <a href="{{site_url($product->url)}}" class="btn btn-default"><i class="mdi mdi-eye"></i></a>
+                                        <a href="{{$product->link()}}" class="btn btn-default"><i class="mdi mdi-eye"></i></a>
                                         <?php endif; ?>
 
                                         <a href="#" onclick="productQuickView('{{$product->id}}', '{{_e('Quick view ')}} {{$product->title}}')" class="btn btn-default"><i class="mdi mdi-magnify-plus-outline"></i></a>
@@ -101,7 +101,7 @@ description: 2 columns vertical
                             </a>
 
                             <div class="mt-3">
-                                <a href="{{site_url($product->url)}}">
+                                <a href="{{$product->link()}}">
                                     <div class="title pb-2">{{$product->title}}</div>
                                 </a>
 
