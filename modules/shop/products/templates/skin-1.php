@@ -84,13 +84,13 @@ if (!isset($tn[1])) {
 <!--                                <img src="--><?php //print thumbnail($item['image'], 600, 800); ?><!--">-->
                                 <div class="hover">
                                     <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-default"><i class="mdi mdi-cart"></i></a>
+                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-default"><i class="mw-micon-Shopping-Cart"></i></a>
                                     <?php endif; ?>
                                     <?php if ($show_fields == false or ($show_fields != false and in_array('read_more', $show_fields))): ?>
-                                        <a href="<?php print $item['link'] ?>" class="btn btn-default"><i class="material-icons">remove_red_eye</i></a>
+                                        <a href="<?php print $item['link'] ?>" class="btn btn-default"><i class="mw-micon-Eye-Visible"</i></a>
                                     <?php endif; ?>
 
-                                    <a href="#" onclick="productQuickView('<?php print $item['id'] ?>')" class="btn btn-default"><i class="mdi mdi-magnify-plus-outline"></i></a>
+                                    <a href="#" onclick="productQuickView('<?php print $item['id'] ?>')" class="btn btn-default"><i class="mw-micon-Search-People"></i></a>
 
                                 </div>
                             </div>

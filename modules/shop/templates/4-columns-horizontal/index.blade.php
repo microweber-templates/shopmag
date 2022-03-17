@@ -87,14 +87,14 @@ description: 4 columns horizontal
 
                                     <div class="hover">
                                         <?php if ($product->inStock == true): ?>
-                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-{{$product->id}}', '{{$product->price}}','{{$product->title}}');" class="btn btn-default"><i class="mdi mdi-shopping"></i></a>
-                                        <a href="{{$product->link()}}" class="btn btn-default"><i class="mdi mdi-eye"></i></a>
+                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-{{$product->id}}', '{{$product->price}}','{{$product->title}}');" class="btn btn-default"><i class="mw-micon-Shopping-Cart"></i></a>
+                                        <a href="{{$product->link()}}" class="btn btn-default"><i class="mw-micon-Eye-2"></i></a>
                                         <?php else: ?>
-                                        <a href="javascript:;" onclick="alert('This product is out of stock');" class=" btn btn-default"><i class="mdi mdi-cart-off"></i></a>
-                                        <a href="{{$product->link()}}" class="btn btn-default"><i class="mdi mdi-eye"></i></a>
+                                        <a href="javascript:;" onclick="alert('This product is out of stock');" class=" btn btn-default"><i class="mw-micon-Shopping-Cart-off"></i></a>
+                                        <a href="{{$product->link()}}" class="btn btn-default"><i class="mw-micon-Eye-2"></i></a>
                                         <?php endif; ?>
 
-                                        <a href="#" onclick="productQuickView('{{$product->id}}', '{{_e('Quick view ')}} {{$product->title}}')" class="btn btn-default"><i class="mdi mdi-magnify-plus-outline"></i></a>
+                                        <a href="#" onclick="productQuickView('{{$product->id}}', '{{_e('Quick view ')}} {{$product->title}}')" class="btn btn-default"><i class="mw-micon-Search-People"></i></a>
                                     </div>
                                 </div>
                             </a>
@@ -125,7 +125,7 @@ description: 4 columns horizontal
 
                                     {{--<div class="d-md-none col-6 d-flex justify-content-end">--}}
                                     {{--<?php if ($product->inStock == true): ?>--}}
-                                    {{--<a href="javascript:;" onclick="mw.cart.add_item('{{$product->id}}','{{$product->price}}', '{{$product->title}}')" class="btn btn-outline-primary"><i class="mdi mdi-cart"></i></a>--}}
+                                    {{--<a href="javascript:;" onclick="mw.cart.add_item('{{$product->id}}','{{$product->price}}', '{{$product->title}}')" class="btn btn-outline-primary"><i class="mw-micon-Shopping-Cart"></i></a>--}}
                                     {{--<?php else: ?>--}}
                                     {{--<span class="text-danger p-1"><i class="material-icons" style="font-size: 18px;">remove_shopping_cart</i> <?php _lang("Out of Stock", 'templates/shopmag') ?></span>--}}
                                     {{--<?php endif; ?>--}}
