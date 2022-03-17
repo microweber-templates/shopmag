@@ -15,7 +15,7 @@ class ShopmagShopProductLinksScraper extends BaseComponent
      */
     public function selector()
     {
-        return '.container';
+        return '.main';
     }
 
     /**
@@ -45,7 +45,8 @@ class ShopmagShopProductLinksScraper extends BaseComponent
         $findHome = Page::where('is_home', 1)->first();
 
         $browser->visit($findHome->link());
-        $browser->waitForText('Shop');
+
+        $browser->waitForText('Shop',30);
 
         $shopLink = $browser->script("return $('#header_menu').find('a:contains(\"Shop\")').first().attr('href')");
         $browser->visit($shopLink[0]);
