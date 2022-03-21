@@ -1,6 +1,7 @@
 <?php
-$size = $size . 'px';
-
+if($size != 'auto') {
+    $size = $size . 'px';
+}
 
 ?>
 
