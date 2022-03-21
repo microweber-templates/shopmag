@@ -38,7 +38,7 @@ description: News 2
                         <?php endif; ?>
                     <?php endforeach; ?>
 
-                    <div class="col-lg-5 offset-lg-1 col-lg-4">
+                    <div class="col-lg-6 col-lg-4">
                         <div class="row">
                             <?php foreach ($data as $key => $item): ?>
                                 <?php $itemData = content_data($item['id']); ?>

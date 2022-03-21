@@ -1498,7 +1498,8 @@ body[data-lang="ar"] .dropdown-menu {
   //}
 
   body:not([data-lang="ar"]) .navigation .list li > a:after {
-    right: 0;
+    position: absolute;
+      left: 200px;
     margin-right: 25px;
   }
 

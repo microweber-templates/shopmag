@@ -80,7 +80,9 @@
 
 </div>
 
-<button id="to-top" class="btn" style="display: block;"></button>
+<button id="to-top" class="btn" style="display: block;">
+    <i class="mw-micon-Arrow-Up"></i>
+</button>
 
 <?php include('footer_cart.php'); ?>
 

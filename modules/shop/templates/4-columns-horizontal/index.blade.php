@@ -81,26 +81,26 @@ description: 4 columns horizontal
                         <div class="product">
                             <input type="hidden" name="content_id" value="{{$product->id}}"/>
 
-                            <a href="{{site_url($product->url)}}" class="d-flex h-100 w-100">
+                            <a href="{{$product->link()}}" class="d-flex h-100 w-100">
                                 <div class="image-square-4-colums-horizontal" style="background-image: url({{$product->thumbnail(1800,2400, true)}} ">
                                     {{--<img src="{{$product->thumbnail(1200,1600, true)}}" alt="">--}}
 
                                     <div class="hover">
                                         <?php if ($product->inStock == true): ?>
-                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-{{$product->id}}', '{{$product->price}}','{{$product->title}}');" class="btn btn-default"><i class="mdi mdi-shopping"></i></a>
-                                        <a href="{{site_url($product->url)}}" class="btn btn-default"><i class="mdi mdi-eye"></i></a>
+                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-{{$product->id}}', '{{$product->price}}','{{$product->title}}');" class="btn btn-default"><i class="mw-micon-Shopping-Cart"></i></a>
+                                        <a href="{{$product->link()}}" class="btn btn-default"><i class="mw-micon-Eye-2"></i></a>
                                         <?php else: ?>
-                                        <a href="javascript:;" onclick="alert('This product is out of stock');" class=" btn btn-default"><i class="mdi mdi-cart-off"></i></a>
-                                        <a href="{{site_url($product->url)}}" class="btn btn-default"><i class="mdi mdi-eye"></i></a>
+                                        <a href="javascript:;" onclick="alert('This product is out of stock');" class=" btn btn-default"><i class="mw-micon-Close"></i></a>
+                                        <a href="{{$product->link()}}" class="btn btn-default"><i class="mw-micon-Eye-2"></i></a>
                                         <?php endif; ?>
 
-                                        <a href="#" onclick="productQuickView('{{$product->id}}', '{{_e('Quick view ')}} {{$product->title}}')" class="btn btn-default"><i class="mdi mdi-magnify-plus-outline"></i></a>
+                                        <a href="#" onclick="productQuickView('{{$product->id}}', '{{_e('Quick view ')}} {{$product->title}}')" class="btn btn-default"><i class="mw-micon-Search-People"></i></a>
                                     </div>
                                 </div>
                             </a>
 
                             <div class="mt-3">
-                                <a href="{{site_url($product->url)}}">
+                                <a href="{{$product->link()}}">
                                     <div class="title pb-2">{{$product->title}}</div>
                                 </a>
 
@@ -125,7 +125,7 @@ description: 4 columns horizontal
 
                                     {{--<div class="d-md-none col-6 d-flex justify-content-end">--}}
                                     {{--<?php if ($product->inStock == true): ?>--}}
-                                    {{--<a href="javascript:;" onclick="mw.cart.add_item('{{$product->id}}','{{$product->price}}', '{{$product->title}}')" class="btn btn-outline-primary"><i class="mdi mdi-cart"></i></a>--}}
+                                    {{--<a href="javascript:;" onclick="mw.cart.add_item('{{$product->id}}','{{$product->price}}', '{{$product->title}}')" class="btn btn-outline-primary"><i class="mw-micon-Shopping-Cart"></i></a>--}}
                                     {{--<?php else: ?>--}}
                                     {{--<span class="text-danger p-1"><i class="material-icons" style="font-size: 18px;">remove_shopping_cart</i> <?php _lang("Out of Stock", 'templates/shopmag') ?></span>--}}
                                     {{--<?php endif; ?>--}}
