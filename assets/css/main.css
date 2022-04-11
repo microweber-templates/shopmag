@@ -12777,6 +12777,9 @@ html:not(.mobile-menu-active) .header_style_7 .member-nav .dropdown-toggle > spa
 .portfolio-inner-page .heading {
   text-align: left; }
 
+html[dir="rtl"] .portfolio-inner-page .heading {
+  text-align: right; }
+
 .portfolio-inner-page .heading h1, .portfolio-inner-page .heading .h1 {
   font-size: 36px;
   color: #707070;
@@ -14127,9 +14130,6 @@ select {
 
 img, fieldset {
   border: none; }
-
-ul, li {
-  list-style: none; }
 
 .right {
   text-align: right !important; }
@@ -22833,6 +22833,9 @@ footer a {
 
 .portfolio-inner-page .heading {
   text-align: left; }
+
+html[dir="rtl"] .portfolio-inner-page .heading {
+  text-align: right; }
 
 .portfolio-inner-page .heading h1, .portfolio-inner-page .heading .h1 {
   font-size: 36px;
