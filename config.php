@@ -13,7 +13,7 @@ $config['settings']['service_provider'] = [
 ];
 $config['settings']['autoload_namespace'] = [
     [
-        'path' => _DIR_ . '/src/',
+        'path' => __DIR__ . '/src/',
         'namespace' => 'MicroweberPackages\\Template\\Shopmag\\'
     ],
 ];
