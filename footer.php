@@ -42,7 +42,7 @@
                             <p class="description">Be the first to know about our new arrivals and exclusive offers.</p>
                         </div>
 
-                        <module type="contact_form" template="shopmag" id="newsletter_footer"/>
+                        <module type="contact_form" template="shopmag" id="footer_newsletter"/>
 
                     </div>
                 </div>
@@ -56,7 +56,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col type-horizontal-link-list gp-footer-block position-5">
                     <div class="horizontal-link-list-wrapper align-left">
-                        <module type="menu" template="simple" id="footer_menu_bottom" name="footer_menu_bottom"/>
+                        <module type="menu" template="simple" id="footer_menu" name="footer_menu_bottom"/>
 
                     </div>
                 </div>

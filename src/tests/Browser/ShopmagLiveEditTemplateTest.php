@@ -45,7 +45,7 @@ class ShopmagLiveEditTemplateTest extends DuskTestCase
 
     }
 
-    public function testHomepageCreate()
+    public function testHomepageCreateShopmag()
     {
 
         $this->browse(function (Browser $browser)  {
@@ -104,7 +104,7 @@ class ShopmagLiveEditTemplateTest extends DuskTestCase
 
             foreach ($checkIdAttrs as $checkIdAttr) {
 
-                $expected_modules_number = 12;
+                $expected_modules_number = 3;
 
                 // get modules in the main container and check if they are in the right order
                 $val = $browser->script("return $('.main-content').children('div.module').map(function() { return $(this).attr('" . $checkIdAttr . "'); }).get();")[0];
