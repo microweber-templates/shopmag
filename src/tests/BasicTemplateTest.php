@@ -13,6 +13,8 @@ class BasicTemplateTest extends TestCase
 
     public function testHomepage()
     {
+        save_option('current_template', $this->template_name,'template');
+
         $this->assertTrue(true);
     }
 
