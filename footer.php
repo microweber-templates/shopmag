@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="custom-columns col-12 type-socials gp-footer-block position-3">
-                    <div class="socials-wrapper justify-content-sm-start justify-content-center position-3" data-block-id="72d028a5-821e-4715-88c7-5bae94f67d64">
+                    <div class="socials-wrapper justify-content-sm-start justify-content-center position-3"  >
                         <div class="content">
                             <h3 class="footer-titles">Follow Us</h3>
                             <p class="description">And get Free Shipping on all your orders!</p>
@@ -42,7 +42,7 @@
                             <p class="description">Be the first to know about our new arrivals and exclusive offers.</p>
                         </div>
 
-                        <module type="contact_form" template="shopmag"/>
+                        <module type="contact_form" template="shopmag" id="newsletter_footer"/>
 
                     </div>
                 </div>
