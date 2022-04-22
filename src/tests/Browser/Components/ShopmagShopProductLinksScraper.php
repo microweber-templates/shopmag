@@ -6,59 +6,62 @@ use Laravel\Dusk\Browser;
 use Laravel\Dusk\Component as BaseComponent;
 use MicroweberPackages\Page\Models\Page;
 
-class ShopmagShopProductLinksScraper extends BaseComponent
-{
-    /**
-     * Get the root selector for the component.
-     *
-     * @return string
-     */
-    public function selector()
+if (!class_exists('\MicroweberPackages\Template\Shopmag\tests\Browser\Components\ShopmagShopProductLinksScraper')) {
+
+    class ShopmagShopProductLinksScraper extends BaseComponent
     {
-        return '.main';
-    }
+        /**
+         * Get the root selector for the component.
+         *
+         * @return string
+         */
+        public function selector()
+        {
+            return '.main';
+        }
 
-    /**
-     * Assert that the browser page contains the component.
-     *
-     * @param  Browser  $browser
-     * @return void
-     */
-    public function assert(Browser $browser)
-    {
-        // $browser->assertVisible($this->selector());
-    }
+        /**
+         * Assert that the browser page contains the component.
+         *
+         * @param Browser $browser
+         * @return void
+         */
+        public function assert(Browser $browser)
+        {
+            // $browser->assertVisible($this->selector());
+        }
 
-    /**
-     * Get the element shortcuts for the component.
-     *
-     * @return array
-     */
-    public function elements()
-    {
-        return [];
-    }
+        /**
+         * Get the element shortcuts for the component.
+         *
+         * @return array
+         */
+        public function elements()
+        {
+            return [];
+        }
 
-    public $productLinks;
-    public function scrapLinks(Browser $browser)
-    {
-        $findHome = Page::where('is_home', 1)->first();
+        public $productLinks;
 
-        $browser->visit($findHome->link());
+        public function scrapLinks(Browser $browser)
+        {
+            $findHome = Page::where('is_home', 1)->first();
 
-        $browser->waitForText('Shop',30);
+            $browser->visit($findHome->link());
 
-        $shopLink = $browser->script("return $('#header_menu').find('a:contains(\"Shop\")').first().attr('href')");
-        $browser->visit($shopLink[0]);
+            $browser->waitForText('Shop', 30);
 
-        $browser->pause(3000);
+            $shopLink = $browser->script("return $('#header_menu').find('a:contains(\"Shop\")').first().attr('href')");
+            $browser->visit($shopLink[0]);
 
-        $browser->waitForText('Shop');
-        $browser->pause(3000);
+            $browser->pause(3000);
 
-        $currencySymbol = get_currency_symbol();
+            $browser->waitForText('Shop');
+            $browser->pause(3000);
 
-        $this->productLinks = $browser->script("
+            $currencySymbol = get_currency_symbol();
+
+            $this->productLinks = $browser->script("
 
                 var links = [];
                 $('.module-shop .col-xl-4').each(function(index) {
@@ -78,10 +81,12 @@ class ShopmagShopProductLinksScraper extends BaseComponent
                 return links;
             ")[0];
 
+        }
+
+        public function getLinks()
+        {
+            return $this->productLinks;
+        }
     }
 
-    public function getLinks()
-    {
-        return $this->productLinks;
-    }
 }
