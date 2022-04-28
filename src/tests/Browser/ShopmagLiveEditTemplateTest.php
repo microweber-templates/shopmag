@@ -2,7 +2,7 @@
 
 namespace MicroweberPackages\Template\Shopmag\tests\Browser;
 
-include __DIR__ . '/Components/ShopmagShopProductLinksScraper.php';
+include_once( __DIR__ . '/Components/ShopmagShopProductLinksScraper.php');
 
 use Illuminate\Support\Facades\Auth;
 use Laravel\Dusk\Browser;
