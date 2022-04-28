@@ -2,10 +2,12 @@
 
 namespace MicroweberPackages\Template\Shopmag\tests\Browser;
 
+include __DIR__ . '/Components/ShopmagShopProductLinksScraper.php';
+
 use Illuminate\Support\Facades\Auth;
 use Laravel\Dusk\Browser;
 use MicroweberPackages\Page\Models\Page;
-use MicroweberPackages\Template\Shopmag\tests\Browser\Components\ShopmagShopProductLinksScraper;
+
 use MicroweberPackages\User\Models\User;
 use Tests\Browser\Components\AdminLogin;
 use Tests\Browser\Components\ChekForJavascriptErrors;
@@ -27,7 +29,7 @@ class ShopmagLiveEditTemplateTest extends DuskTestCase
 
             app()->template_manager->boot_template();
 
-            $linkScraper = new ShopmagShopProductLinksScraper();
+            $linkScraper = new \MicroweberPackages\Template\Shopmag\tests\Browser\Components\ShopmagShopProductLinksScraper();
             $browser->within($linkScraper, function ($browser) use ($linkScraper) {
                $browser->scrapLinks();
             });
@@ -45,7 +47,7 @@ class ShopmagLiveEditTemplateTest extends DuskTestCase
 
     }
 
-    public function testHomepageCreate()
+    public function testHomepageCreateShopmag()
     {
 
         $this->browse(function (Browser $browser)  {
@@ -77,7 +79,7 @@ class ShopmagLiveEditTemplateTest extends DuskTestCase
 
             $browser->pause(15000);
 
-            $browser->waitForText('template of Microweber',30);
+            $browser->waitForText('Heading title',30);
 
             $browser->within(new ChekForJavascriptErrors(), function ($browser) {
                 $browser->validate();
@@ -104,7 +106,7 @@ class ShopmagLiveEditTemplateTest extends DuskTestCase
 
             foreach ($checkIdAttrs as $checkIdAttr) {
 
-                $expected_modules_number = 12;
+                $expected_modules_number = 3;
 
                 // get modules in the main container and check if they are in the right order
                 $val = $browser->script("return $('.main-content').children('div.module').map(function() { return $(this).attr('" . $checkIdAttr . "'); }).get();")[0];

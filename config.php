@@ -3,7 +3,7 @@
 $config = array();
 $config['name'] = "Shopmag";
 $config['author'] = "Microweber CMS";
-$config['version'] = 3.2;
+$config['version'] = '3.3';
 $config['url'] = "https://microweber.org";
 $config['standalone_module_skins'] = true;
 $config['framework'] = "bootstrap5";
@@ -11,7 +11,12 @@ $config['framework'] = "bootstrap5";
 $config['settings']['service_provider'] = [
     \MicroweberPackages\Template\Shopmag\TemplateServiceProvider::class
 ];
-
+$config['settings']['autoload_namespace'] = [
+    [
+        'path' => __DIR__ . '/src/',
+        'namespace' => 'MicroweberPackages\\Template\\Shopmag\\'
+    ],
+];
 
 $config['is_default'] = 0; //if you set this parameter the template will be selected on the install screen
 

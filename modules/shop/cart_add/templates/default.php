@@ -27,7 +27,7 @@ if (isset($params['content-id'])) {
 <div class="row product-custom-fields-holder">
     <div class="col-lg-3 col">&nbsp;</div>
     <div class="col-lg-9 col">
-        <module type="custom_fields" data-content-id="<?php print intval($for_id); ?>" data-skip-type="price" id="cart_fields_<?php print $params['id'] ?>"/>
+        <module type="custom_fields" data-content-id="<?php print intval($for_id); ?>" data-skip-type="price" id="cart_fields_<?php print $params['id'] ?>" />
     </div>
 </div>
 

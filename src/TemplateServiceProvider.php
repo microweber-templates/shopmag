@@ -14,6 +14,7 @@ class TemplateServiceProvider extends ServiceProvider
 
     public function register()
     {
+
         $this->loadMigrationsFrom(__DIR__ . '/migrations/');
 
     }
