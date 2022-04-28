@@ -144,6 +144,17 @@
         right: unset;
     }
 
+    .slick-testimonials .slick-prev:before, .slick-prev:before {
+        content: '\f054'!important;
 
+    }
+
+
+    .slick-testimonials .slick-next:before, .slick-next:before {
+
+        content: '\f053'!important;
+
+
+    }
 
 }
