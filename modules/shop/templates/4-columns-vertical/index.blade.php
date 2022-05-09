@@ -116,11 +116,13 @@ description: 4 columns vertical
                                 <div class="row justify-content-center">
                                     <div class="col-md-12 price-holder">
                                         <p>
-                                            @if($product->hasSpecialPrice())
-                                                <span class="price-old"><?php print currency_format($product->price); ?></span>
-                                            @endif
-                                            <span class="money"><?php print currency_format($product->specialPrice); ?></span>
-                                        </p>
+                                @if($product->hasSpecialPrice())
+                                    <span class="price-old"><?php print currency_format($product->price); ?></span>
+                                    <span class="money"><?php print currency_format($product->specialPrice); ?></span>
+                                @else
+                                    <span class="money"><?php print currency_format($product->price); ?></span>
+                                @endif
+                            </p>
                                     </div>
 
                                     {{--<div class="d-md-none col-6 d-flex justify-content-end">--}}
