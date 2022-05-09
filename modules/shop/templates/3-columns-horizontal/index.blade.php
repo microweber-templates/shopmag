@@ -117,9 +117,9 @@ description: 3 columns horizontal
                                     <div class="col-md-12 price-holder">
                                         <p>
                                             @if($product->hasSpecialPrice())
-                                                <span class="price-old"><?php print currency_format($product->specialPrice); ?></span>
+                                                <span class="price-old"><?php print currency_format($product->price); ?></span>
                                             @endif
-                                            <span class="money"><?php print currency_format($product->price); ?></span>
+                                            <span class="money"><?php print currency_format($product->specialPrice); ?></span>
                                         </p>
                                     </div>
 
