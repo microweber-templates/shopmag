@@ -31,7 +31,7 @@
                 <?php endif; ?>
 
                 <?php if (user_id()): ?>
-                    <li><a href="<?php print api_link('logout') ?>"><?php _lang("Logout", "templates/shopmag"); ?></a></li>
+                    <li><a href="<?php print logout_url() ?>"><?php _lang("Logout", "templates/shopmag"); ?></a></li>
                 <?php endif; ?>
             </ul>
         </li>
