@@ -30,7 +30,7 @@ if (is_array($data)): ?>
             </div>
         <?php } ?>
         <div class="shop-inner-big-image">
-            <img src="<?php print thumbnail($data[0]['filename'], 1920, 1920); ?>" id="<?php print $pictureElementId; ?>" />
+            <img src="<?php print thumbnail($data[0]['filename'], 1280, 1280); ?>" id="<?php print $pictureElementId; ?>" />
         </div>
     </div>
 
