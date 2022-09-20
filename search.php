@@ -16,7 +16,8 @@ if(function_exists('xss_clean')){
     $keywords = xss_clean($keywords);
     $searchType = xss_clean($searchType);
 }
-
+$keywords = strip_tags($keywords);
+$searchType = strip_tags($searchType);
 
 ?>
 <?php if ($searchType == 'blog' OR $searchType == ''): ?>
