@@ -24,16 +24,24 @@ description: Posts Slider
                                 <h3 class=" m-b-20"><?php print $item['title'] ?></h3>
                             <?php endif; ?>
 
+                            <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
+
                             <p class="date m-b-10"><?php print $item['created_at'] ?></p>
+                            <?php endif; ?>
+
 
                             <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
                                 <p><?php print $item['description'] ?></p>
                             <?php endif; ?>
                         </div>
 
+                        <?php if (!isset($show_fields) or $show_fields == false or in_array('read_more', $show_fields)): ?>
+
                         <div class="m-t-auto">
                             <a href="<?php print $item['link'] ?>" class="button-8"><span>Read more</span></a>
                         </div>
+                        <?php endif; ?>
+
                     </div>
                 </div>
             <?php endforeach; ?>

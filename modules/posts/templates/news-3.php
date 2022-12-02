@@ -28,7 +28,10 @@ description: News 4
                                             <div class="post-holder">
                                                 <div class="thumbnail justify-content-bottom align-items-end d-flex flex-cloumns" style="background-image: url('<?php print thumbnail($item['image'], 790, 390, true); ?>');">
                                                     <div>
+                                                        <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
+
                                                         <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
+                                                        <?php endif; ?>
 
                                                         <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
                                                             <a href="<?php print $item['link'] ?>">
@@ -36,7 +39,11 @@ description: News 4
                                                             </a>
                                                         <?php endif; ?>
 
+                                                        <?php if (!isset($show_fields) or $show_fields == false or in_array('read_more', $show_fields)): ?>
+
                                                         <a href="<?php print $item['link'] ?>" class="btn btn-primary m-t-10">Read now</a>
+                                                        <?php endif; ?>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -49,12 +56,17 @@ description: News 4
                                     <div class="col-6 d-none d-lg-block">
                                         <div class="row m-b-30">
                                             <div class="col-lg-5">
+                                                <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
+                                                <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
+
                                                 <div class="post-holder">
                                                     <a href="<?php print $item['link'] ?>">
                                                         <img src="<?php print thumbnail($item['image'], 300, 225, true); ?>" alt=""/>
                                                     </a>
                                                 </div>
-                                            </div>
+                                <?php endif; ?>
+
+                                </div>
 
                                             <div class="col-lg-7">
                                                 <div class="post-holder">
@@ -70,7 +82,11 @@ description: News 4
                                                     <?php endif; ?>
 
 
+                                                    <?php if (!isset($show_fields) or $show_fields == false or in_array('read_more', $show_fields)): ?>
+
                                                     <a href="<?php print $item['link'] ?>" itemprop="url" class="button-8 button-red m-t-10"><span>Read more</span></a>
+                                                    <?php endif; ?>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -98,7 +114,11 @@ description: News 4
                                                             </a>
                                                         <?php endif; ?>
 
+                                                        <?php if (!isset($show_fields) or $show_fields == false or in_array('read_more', $show_fields)): ?>
+
                                                         <a href="<?php print $item['link'] ?>" class="btn btn-primary m-t-10">Read now</a>
+                                                        <?php endif; ?>
+
                                                     </div>
                                                 </div>
                                             </div>

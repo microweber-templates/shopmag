@@ -25,7 +25,11 @@ description: News 2
                                     <a href="<?php print $item['link'] ?>">
                                         <div class="thumbnail justify-content-bottom align-items-end d-flex flex-cloumns" style="background-image: url('<?php print thumbnail($item['image'], 800, 800); ?>');"></div>
                                     </a>
-                                    <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
+                            <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
+
+                                <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
+                            <?php endif; ?>
+
                                     <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
                                         <a href="<?php print $item['link'] ?>"><h2><?php print $item['title'] ?></h2></a>
                                     <?php endif; ?>
@@ -48,8 +52,11 @@ description: News 2
                                             <a href="<?php print $item['link'] ?>">
                                                 <div class="thumbnail justify-content-bottom align-items-end d-flex flex-cloumns" style="background-image: url('<?php print thumbnail($item['image'], 500, 500); ?>');"></div>
                                             </a>
+                                            <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
                                             <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
+                                            <?php endif; ?>
+
                                             <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
                                                 <a href="<?php print $item['link'] ?>"><h4><?php print $item['title'] ?></h4></a>
                                             <?php endif; ?>

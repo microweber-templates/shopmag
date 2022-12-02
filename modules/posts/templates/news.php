@@ -24,7 +24,10 @@ description: News 1
                                 <div class="post-holder">
                                     <div class="thumbnail justify-content-bottom align-items-end d-flex flex-cloumns" style="background-image: url('<?php print thumbnail($item['image'], 1135, 540, true); ?>');">
                                         <div>
-                                            <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
+                                            <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
+
+                                                <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
+                                            <?php endif; ?>
 
                                             <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
                                                 <a href="<?php print $item['link'] ?>"><h3><?php print $item['title'] ?></h3></a>
@@ -34,7 +37,11 @@ description: News 1
                                                 <p><?php print $item['description'] ?></p>
                                             <?php endif; ?>
 
-                                            <a href="<?php print $item['link'] ?>" itemprop="url" class="btn btn-primary m-t-10"><span>Read more</span></a>
+                                            <?php if (!isset($show_fields) or $show_fields == false or in_array('read_more', $show_fields)): ?>
+
+                                                <a href="<?php print $item['link'] ?>" itemprop="url" class="btn btn-primary m-t-10"><span>Read more</span></a>
+                                            <?php endif; ?>
+
                                         </div>
                                     </div>
                                 </div>
@@ -61,7 +68,11 @@ description: News 1
                                         <p><?php print $item['description'] ?></p>
                                     <?php endif; ?>
 
-                                    <a href="<?php print $item['link'] ?>" itemprop="url" class="button-8 m-t-10"><span>Read more</span></a>
+                                    <?php if (!isset($show_fields) or $show_fields == false or in_array('read_more', $show_fields)): ?>
+
+                                        <a href="<?php print $item['link'] ?>" itemprop="url" class="button-8 m-t-10"><span>Read more</span></a>
+                                    <?php endif; ?>
+
                                 </div>
                             </div>
                         <?php endif; ?>
