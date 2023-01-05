@@ -13939,6 +13939,9 @@ html[dir="rtl"] .portfolio-inner-page .heading {
     .section-27 .socials-holder {
       display: none; } }
 
+.container .container {
+  width: auto !important; }
+
 /****************************
            GENERAL
 *****************************/
@@ -21665,6 +21668,9 @@ footer a {
   @media screen and (max-width: 991px) {
     .section-27 .socials-holder {
       display: none; } }
+
+.container .container {
+  width: auto !important; }
 
 /****************************
            GENERAL

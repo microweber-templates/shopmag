@@ -3,7 +3,7 @@
 $config = array();
 $config['name'] = "Shopmag";
 $config['author'] = "Microweber CMS";
-$config['version'] = '3.8';
+$config['version'] = '3.9';
 $config['url'] = "https://microweber.org";
 $config['standalone_module_skins'] = true;
 $config['framework'] = "bootstrap5";

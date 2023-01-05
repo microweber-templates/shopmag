@@ -1007,4 +1007,7 @@
     .section-27 .socials-holder {
       display: none; } }
 
+.container .container {
+  width: auto !important; }
+
 /*# sourceMappingURL=sections.css.map */
